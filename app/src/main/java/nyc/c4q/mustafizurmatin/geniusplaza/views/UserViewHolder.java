@@ -24,7 +24,7 @@ public class UserViewHolder  extends RecyclerView.ViewHolder {
         userName = itemView.findViewById(R.id.first_name);
     }
     public void onBind(Users results) {
-        userName.setText(results.getFirst_name() + results.getLast_name());
+        userName.setText(results.getFirst_name() + " " +  results.getLast_name());
         Picasso.with(itemView.getContext()).load(results.getAvatar())
                 .into(userAvatar);
 
