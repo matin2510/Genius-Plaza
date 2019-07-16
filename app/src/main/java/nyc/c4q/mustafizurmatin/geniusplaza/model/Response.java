@@ -1,6 +1,6 @@
 package nyc.c4q.mustafizurmatin.geniusplaza.model;
 
-import java.util.List;
+import java.util.ArrayList;
 
 /**
  * Created by Mustafizur Matin on 7/16/19.
@@ -20,7 +20,7 @@ public class Response {
     private int per_page;
     private int total;
     private int total_pages;
-    private List<Users> data;
+    private ArrayList<Users> data;
 
     public int getPage() {
         return page;
@@ -54,11 +54,11 @@ public class Response {
         this.total_pages = total_pages;
     }
 
-    public List<Users> getData() {
+    public ArrayList<Users> getData() {
         return data;
     }
 
-    public void setData(List<Users> data) {
+    public void setData(ArrayList<Users> data) {
         this.data = data;
     }
 

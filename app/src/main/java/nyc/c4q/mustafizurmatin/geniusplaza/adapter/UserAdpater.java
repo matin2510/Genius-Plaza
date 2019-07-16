@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import nyc.c4q.mustafizurmatin.geniusplaza.R;
 import nyc.c4q.mustafizurmatin.geniusplaza.model.Users;
@@ -16,9 +16,9 @@ import nyc.c4q.mustafizurmatin.geniusplaza.views.UserViewHolder;
  */
 
 public class UserAdpater extends RecyclerView.Adapter<UserViewHolder> {
-    private List<Users> dataList;
+    private ArrayList<Users> dataList;
 
-    public UserAdpater(List<Users> dataList) {
+    public UserAdpater(ArrayList<Users> dataList) {
         this.dataList = dataList;
     }
 
@@ -31,7 +31,7 @@ public class UserAdpater extends RecyclerView.Adapter<UserViewHolder> {
 
     @Override
     public void onBindViewHolder(UserViewHolder holder, int position) {
-
+        holder.onBind(dataList.get(position));
     }
 
     @Override
