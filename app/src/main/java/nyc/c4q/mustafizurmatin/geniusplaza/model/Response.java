@@ -3,10 +3,10 @@ package nyc.c4q.mustafizurmatin.geniusplaza.model;
 import java.util.List;
 
 /**
- * Created by c4q on 7/16/19.
+ * Created by Mustafizur Matin on 7/16/19.
  */
 
-public class Data {
+public class Response {
 
     /**
      * page : 1

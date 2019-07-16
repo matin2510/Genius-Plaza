@@ -1,7 +1,7 @@
 package nyc.c4q.mustafizurmatin.geniusplaza.model;
 
 /**
- * Created by c4q on 7/16/19.
+ * Created by Mustafizur Matin on 7/16/19.
  */
 
 public class Users {
