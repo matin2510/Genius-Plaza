@@ -56,12 +56,12 @@ public class MainActivity extends AppCompatActivity {
         myRecyclerView = findViewById(R.id.myRecyclerView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false);
         service = RetrofitClient.getRetrofitInstance().create(GetUserProfiles.class);
-        serviceCall();
+        getUsers();
 
         myRecyclerView.setLayoutManager(linearLayoutManager);
         myRecyclerView.setAdapter(myAdapter);
     }
-    public void serviceCall(){
+    public void getUsers(){
         Call<Response> call = service.getAllUsers();
         call.enqueue(new Callback<Response>() {
             @Override
